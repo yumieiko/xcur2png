@@ -671,7 +671,7 @@ int saveConfAndPNGs (const XcursorImages* xcIs, const char* xcurFilePart, int su
   int ret;
   int count = 0;
   char pngName[PATH_MAX] = {0};
-  extern dry_run;
+  extern int dry_run;
   
   //Write comment on config-file.
   fprintf (conffp,"#size\txhot\tyhot\tPath to PNG image\tdelay\n");
